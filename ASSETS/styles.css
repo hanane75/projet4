@@ -98,8 +98,11 @@ header img{
     gap: 15px;
     width: 90%;
     padding-bottom: 50px;
-
+    @media screen {
+    
 }
+}
+
 .fonctionnement-list{
 
     display: flex;
@@ -111,6 +114,13 @@ header img{
     gap: 20px;
     align-items: center;
 }
+@media all and (min-width: 1024px) {
+    .fonctionnement-list {
+      width: 98%;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
 
 
 .fonctionnement .choix{
@@ -146,7 +156,7 @@ color:var(--icon-color-none);
   }
   .choix .fonctionnement-number{
     position: absolute;
-    left: 20px;
+    left: 30px;
   }
 
 
@@ -157,11 +167,14 @@ color:var(--icon-color-none);
     flex-direction: column;
     width:100%;
     background-color: var(--main-bg-color);
-   padding-bottom: 50px;
-   
+    padding-bottom: 50px; 
 }
+
+  
 .restaurant h2{
     padding-left: 20px;
+    margin:0px;
+    padding-top: 20px;
 }
 
 .restaurant-cards{
@@ -170,8 +183,19 @@ color:var(--icon-color-none);
     justify-content: space-between;
     padding-left: 15px;
     padding-right: 15px;
-
 }
+
+.restaurant-card-content .markerinfo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 30px;
+    border-radius: 2px;
+    background-color: #99E2D0;
+    color: #278870;
+    font-weight: 500;
+  }
 .restaurant-card-content{
     width: 100%;
     background-color: white;
@@ -206,16 +230,28 @@ color:var(--icon-color-none);
     display: flex;
     flex-direction: column;
     background-color: #353535;
-    
+   padding:15px;
 
+  }
+  @media all and (min-width: 768px) {
+    footer {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+      height: 114px;
+      gap: 16px;
+    }
   }
 
   footer h1{
-    margin: 0 0 16px 0;
+    
     font-size: 27px;
     font-family: "Shrikhand",cursive;
     font-size: 18px;
     color: #d5d5d5;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .footer__nav {
@@ -225,17 +261,35 @@ color:var(--icon-color-none);
     gap:10px;
     color: #d5d5d5; 
     text-decoration: none;
+    padding: 5px;
     
+  }
+
+  .footer__nav-2{
+    padding-left:15px;
   }
 footer .propos{
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding: 0;
 }
 
+    @media all and (min-width: 768px) {
+    footer div{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+    }
+}
   .footer__nav--icons {
    padding-left: 15px;
     width: 16px;
     height: 13px;
     font-size: 13px;
+  }
+  @media all and (min-width: 768px) {
+    .footer__nav--icons{
+        color:white;
+    }
   }
