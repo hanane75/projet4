@@ -180,6 +180,15 @@ header {
 	box-shadow: 5px 5px 10px #DADADA;
 	text-decoration: none;
 	color: $color_6;
+	.restaurant-img {
+		width: 100%;
+		height: 124px;
+		-o-object-fit: cover;
+		object-fit: cover;
+		border-top-left-radius: 20px;
+		border-top-right-radius: 20px;
+		position: relative;
+	}
 	.markerinfo {
 		display: flex;
 		align-items: center;
@@ -190,15 +199,12 @@ header {
 		background-color: $background-color_4;
 		color: $color_7;
 		font-weight: 500;
+		position: absolute;
+		right: 15px;
+		top: 12px;
+	
 	}
-	img {
-		width: 100%;
-		height: 124px;
-		-o-object-fit: cover;
-		object-fit: cover;
-		border-top-left-radius: 20px;
-		border-top-right-radius: 20px;
-	}
+	
 }
 .card-title-rest {
 	margin: 1px 0px 8px 15px;
