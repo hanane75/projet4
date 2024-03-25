@@ -1,11 +1,3 @@
-/****** General ***********/
-:root {
-  --main-color: #9356DC;
-  --main-bg-color: #F2F2F2;
-  --icon-colo-ok:var(--main-color);
-  --icon-color-none:grey;
-}
-
 body {
   display: flex;
   justify-content: center;
@@ -32,7 +24,7 @@ header img {
 
 .localisation {
   display: flex;
-  background-color: var(--main-bg-color);
+  background-color: #F2F2F2;
   width: 100%;
   align-items: center;
   justify-content: center;
@@ -49,9 +41,10 @@ header img {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: var(--main-bg-color);
+  background-color: #F2F2F2;
+  width: 100%;
 }
-.section-menu h1 {
+.section-menu h2 {
   text-decoration: none;
   color: black;
   font-weight: 600;
@@ -63,9 +56,13 @@ header img {
   text-decoration: none;
   color: black;
   text-align: center;
+  width: 100%;
 }
-
 .section-menu .boutton-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
   color: #EAEAEA;
   font-size: 16px;
@@ -73,6 +70,11 @@ header img {
   height: 50px;
   border-radius: 50px;
   border: none;
+  cursor: pointer;
+  transition: transform 400ms;
+}
+.section-menu .boutton-text:hover {
+  transform: scale(1.15);
 }
 
 /*section fonctionnement*/
@@ -86,6 +88,17 @@ header img {
   width: 90%;
   padding-bottom: 50px;
 }
+.fonctionnement .choix {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 20px;
+  padding: 4px 19px;
+  gap: 10px;
+  background-color: #F2F2F2;
+  box-shadow: 0 4px 10px 0 #d5d5d5;
+  width: 80%;
+}
 
 .fonctionnement-list {
   display: flex;
@@ -98,31 +111,12 @@ header img {
   align-items: center;
 }
 
-@media all and (min-width: 1024px) {
-  .fonctionnement-list {
-    width: 98%;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-.fonctionnement .choix {
-  display: flex;
-  align-items: center;
-  height: 50px;
-  border-radius: 20px;
-  padding: 4px 19px;
-  gap: 10px;
-  background-color: var(--main-bg-color);
-  box-shadow: 0 4px 10px 0 #d5d5d5;
-  width: 80%;
-}
-
 .icon-color {
-  color: var(--icon-colo-ok);
+  color: #9356DC;
 }
 
 .icon-color-1 {
-  color: var(--icon-color-none);
+  color: grey;
 }
 
 .fonctionnement-number {
@@ -139,7 +133,8 @@ header img {
 
 .choix .fonctionnement-number {
   position: absolute;
-  left: 30px;
+  left: 40px;
+  z-index: 1;
 }
 
 /*restaurant**/
@@ -147,7 +142,7 @@ header img {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: var(--main-bg-color);
+  background-color: #F2F2F2;
   padding-bottom: 50px;
 }
 .restaurant h2 {
@@ -189,7 +184,7 @@ header img {
   width: 100%;
   height: 124px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -209,17 +204,6 @@ footer {
   background-color: #353535;
   padding: 15px;
 }
-
-@media all and (min-width: 768px) {
-  footer {
-    display: flex;
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    height: 114px;
-    gap: 16px;
-  }
-}
 footer h1 {
   font-size: 27px;
   font-family: "Shrikhand", cursive;
@@ -227,6 +211,12 @@ footer h1 {
   color: #d5d5d5;
   margin-top: 0px;
   margin-bottom: 0px;
+}
+footer .propos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
 }
 
 .footer__nav {
@@ -243,20 +233,6 @@ footer h1 {
   padding-left: 15px;
 }
 
-footer .propos {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 0;
-}
-
-@media all and (min-width: 768px) {
-  footer div {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 30px;
-  }
-}
 .footer__nav--icons {
   padding-left: 15px;
   width: 16px;
@@ -264,7 +240,27 @@ footer .propos {
   font-size: 13px;
 }
 
+@media all and (min-width: 786px) {
+  .fonctionnement-list {
+    width: 98%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 @media all and (min-width: 768px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    height: 114px;
+    gap: 16px;
+  }
+  footer div {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 30px;
+  }
   .footer__nav--icons {
     color: white;
   }
