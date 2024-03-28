@@ -18,18 +18,16 @@
     <div class="main-container">
         <!--creation du header avec le logo et la localisation -->
         <header>
-            <div>
                 <img src="ASSETS/Images-textes-Ohmyfood/images/logo/ohmyfood.png" alt="c'est le logo du site">
-            </div>  
+                <form method="post" action="#" class="localisation">
+                    <div class="icone-localisation"><i class="fa-solid fa-location-dot"></i></div>
+                    <label for="lieu-rechercher"></label>
+                    <input type="search" id="lieu-rechercher" placeholder="Paris, Belleville">
+
+                </form>
         </header>
 
     <main>
-             <!--ici j'ai ajouter la localisation -->
-             <div class="localisation">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Paris, Belleville</p>
-            </div>
-
             <section class="section-menu">
                     <h2>Réservez le menu qui vous convient</h2>
                     <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
@@ -61,12 +59,12 @@
             <section  id="restaurant" class="restaurant">
             <h2>Restaurants</h2>
                 <div class="restaurant-cards">
-                    <a href="#" class="restaurant-card-content">
+                    <a href="menu/Menu - La palette du goût.html" class="restaurant-card-content">
                     <article >
+                        <div class="markerinfo">
+                            <p>Nouveau</p>
+                        </div>
                         <img  class="restaurant-img" src="ASSETS/Images-textes-Ohmyfood/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt=" le nom du restaurant">
-                            <div class="markerinfo">
-                                <p>Nouveau</p>
-                            </div>
                                 <div>
                                     <h3 class="card-title-rest">La palette du goût</h3>
                                     <p class="card-subtitle-rest">Ménilmontant</p>
@@ -78,10 +76,11 @@
                     </a>
                     <a href="#" class="restaurant-card-content">
                         <article >
-                            <img  class="restaurant-img" src="ASSETS/Images-textes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt=" le nom du restaurant">
                             <div class="markerinfo">
                                 <p>Nouveau</p>
                             </div>
+                            <img  class="restaurant-img" src="ASSETS/Images-textes-Ohmyfood/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt=" le nom du restaurant">
+                            
                                     <div>
                                         <h3 class="card-title-rest">La note enchantée</h3>
                                         <p class="card-subtitle-rest">Charonne</p>
@@ -126,10 +125,10 @@
     <footer>
         <h2>ohmyfood</h2>
             <ul class="propos">
-                <li class="footer__nav "><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
-                <li class="footer__nav "><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
-                <li class="footer__nav "><a href="#">Mentions légales</a></li>
-                <li class="footer__nav "><a href="mailto:contact@ohmyfood.com">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
               </ul>
     </footer>
 </div>
